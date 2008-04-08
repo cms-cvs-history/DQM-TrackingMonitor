@@ -45,6 +45,7 @@ module TrackMon = TrackingMonitor {
   double TrackPzMax = 50.0
 
   //
+  string FolderName = "Track/GlobalParameters"
   bool MTCCData = false
   bool OutputMEsInRootFile = false
   string OutputFileName="MonitorTrack.root"
