@@ -1,0 +1,52 @@
+module MonitorTrackGLBCosmicMuons = TrackingMonitor {
+  string TrackProducer="globalCosmicMuons"
+  string TrackLabel=""
+  string AlgoName="glb"
+
+      //
+  int32 TkSizeBin=500
+  double TkSizeMin = 0.0
+  double TkSizeMax = 500.0
+
+  int32 RecHitBin=22
+  double RecHitMin = 0
+  double RecHitMax = 25
+
+  int32 PhiBin = 100
+  double PhiMin = -3.2
+  double PhiMax = 3.2
+
+  int32 EtaBin = 100
+  double EtaMin = -4.0
+  double EtaMax = 4.0
+
+  int32 ThetaBin = 100
+  double ThetaMin = 0.0
+  double ThetaMax = 3.2
+
+  int32 Chi2Bin = 100
+  double Chi2Min = -0.5
+  double Chi2Max = 500
+
+  int32 TrackPtBin = 100
+  double TrackPtMin = -0.5
+  double TrackPtMax = 30.0
+
+  int32 TrackPxBin = 100
+  double TrackPxMin = -50.0
+  double TrackPxMax = 50.0
+
+  int32 TrackPyBin = 100
+  double TrackPyMin = -50.0
+  double TrackPyMax = 50.0
+
+  int32 TrackPzBin = 100
+  double TrackPzMin = -50.0
+  double TrackPzMax = 50.0
+
+  //
+  string FolderName = "Muons/GLBTrack"
+  bool MTCCData = false
+  bool OutputMEsInRootFile = false
+  string OutputFileName="monitortrackparameters_glbmuons.root"
+}
