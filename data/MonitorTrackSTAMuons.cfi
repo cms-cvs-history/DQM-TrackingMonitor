@@ -1,0 +1,81 @@
+  # MonitorTrackGlobal
+  module  MonitorTrackSTACosmicMuons = TrackingMonitor
+  {
+    string TrackProducer="cosmicMuons"
+    string TrackLabel=""
+    string AlgoName="sta"
+    string MeasurementState="default" // All/OuterSurface/InnerSurface/ImpactPoint/default(track)
+
+    //
+    int32 TkSizeBin=11
+    double TkSizeMin = -0.5
+    double TkSizeMax = 10.5
+
+    int32 RecHitBin=90
+    double RecHitMin = 0
+    double RecHitMax = 90
+
+    int32 PhiBin = 100
+    double PhiMin = -3.2
+    double PhiMax = 3.2
+
+    int32 EtaBin = 100
+    double EtaMin = -3.0
+    double EtaMax = 3.0
+
+    int32 ThetaBin = 100
+    double ThetaMin = 0.0
+    double ThetaMax = 3.2
+
+    int32 Chi2Bin = 100
+    double Chi2Min = -0.5
+    double Chi2Max = 500
+
+    int32 TrackPtBin = 20
+    double TrackPtMin = -0.5
+    double TrackPtMax = 19.5
+
+    int32 TrackPxBin = 100
+    double TrackPxMin = -50.0
+    double TrackPxMax = 50.0
+
+    int32 TrackPyBin = 100
+    double TrackPyMin = -50.0
+    double TrackPyMax = 50.0
+
+    int32 TrackPzBin = 100
+    double TrackPzMin = -50.0
+    double TrackPzMax = 50.0
+
+    int32 ptErrBin = 500
+    double ptErrMin = 0
+    double ptErrMax = 1000
+  
+    int32 pxErrBin = 1000
+    double pxErrMin = -10
+    double pxErrMax = 10
+  
+    int32 pyErrBin = 1000
+    double pyErrMin = -10
+    double pyErrMax = 10
+  
+    int32 pzErrBin = 1000
+    double pzErrMin = -10
+    double pzErrMax = 10
+  
+    int32 pErrBin = 1000
+    double pErrMin = -10
+    double pErrMax = 10
+  
+    int32 phiErrBin = 500
+    double phiErrMin = -5
+    double phiErrMax = 5
+  
+    int32 etaErrBin = 500
+    double etaErrMin = -0.5
+    double etaErrMax = 0.5
+    //
+    string FolderName = "Muons/STATrack"
+    bool OutputMEsInRootFile = false
+    string OutputFileName="monitortrackparameters_stamuons.root"
+  }
