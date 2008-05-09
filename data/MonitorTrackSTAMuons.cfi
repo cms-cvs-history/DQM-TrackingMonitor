@@ -1,7 +1,7 @@
   # MonitorTrackGlobal
-  module  MonitorTrackSTACosmicMuons = TrackingMonitor
+  module  MonitorTrackSTAMuons = TrackingMonitor
   {
-    string TrackProducer="cosmicMuons"
+    string TrackProducer="standAloneMuons"
     string TrackLabel=""
     string AlgoName="sta"
     string MeasurementState="default" // All/OuterSurface/InnerSurface/ImpactPoint/default(track)

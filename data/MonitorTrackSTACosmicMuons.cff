@@ -1,0 +1,11 @@
+include "DQM/TrackingMonitor/data/MonitorTrackSTACosmicMuons.cfi"
+
+module  MonitorTrackSTACosmicMuonsBarrel = MonitorTrackSTAMuons from "DQM/TrackingMonitor/data/MonitorTrackSTAMuons.cfi"
+replace MonitorTrackSTACosmicMuonsBarrel.TrackProducer="cosmicMuonsBarrelOnly"
+
+module  MonitorTrackSTACosmicMuonsEndcaps = MonitorTrackSTAMuons from "DQM/TrackingMonitor/data/MonitorTrackSTAMuons.cfi"
+replace MonitorTrackSTACosmicMuonsEndcaps.TrackProducer="cosmicMuonsEndCapsOnly"
+
+sequence standAloneCosmicMuonsMonitors = {MonitorTrackSTACosmicMuons,
+	MonitorTrackSTACosmicMuonsBarrel,
+	MonitorTrackSTACosmicMuonsEndcaps}
