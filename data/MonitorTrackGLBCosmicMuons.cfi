@@ -1,6 +1,5 @@
 module MonitorTrackGLBCosmicMuons = TrackingMonitor {
-  string TrackProducer="globalCosmicMuons"
-  string TrackLabel=""
+  InputTag TrackProducer="globalCosmicMuons"
   string AlgoName="glb"
   string MeasurementState="default" // All/OuterSurface/InnerSurface/ImpactPoint/default(track)
 
