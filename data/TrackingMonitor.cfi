@@ -1,5 +1,6 @@
 module TrackMon = TrackingMonitor {
-  InputTag TrackProducer= generalTracks
+  string TrackProducer="generalTracks"
+  string TrackLabel=""
   string AlgoName="GenTk"
   string MeasurementState="default" // All/OuterSurface/InnerSurface/ImpactPoint/default(track)
 
