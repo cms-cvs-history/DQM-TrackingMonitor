@@ -1,11 +1,31 @@
 include "DQM/TrackingMonitor/data/MonitorTrackSTACosmicMuons.cfi"
 
 module  MonitorTrackSTACosmicMuonsBarrel = MonitorTrackSTAMuons from "DQM/TrackingMonitor/data/MonitorTrackSTAMuons.cfi"
-replace MonitorTrackSTACosmicMuonsBarrel.TrackProducer="cosmicMuonsBarrelOnly"
+replace MonitorTrackSTACosmicMuonsBarrel.FolderName="Muons/cosmicMuonsBarrelOnly"
 
-module  MonitorTrackSTACosmicMuonsEndcaps = MonitorTrackSTAMuons from "DQM/TrackingMonitor/data/MonitorTrackSTAMuons.cfi"
-replace MonitorTrackSTACosmicMuonsEndcaps.TrackProducer="cosmicMuonsEndCapsOnly"
+module  MonitorTrackSTACosmicMuonsEndCaps = MonitorTrackSTAMuons from "DQM/TrackingMonitor/data/MonitorTrackSTAMuons.cfi"
+replace MonitorTrackSTACosmicMuonsEndCaps.FolderName="Muons/cosmicMuonsEndCapsOnly"
 
-sequence standAloneCosmicMuonsMonitors = {MonitorTrackSTACosmicMuons,
-	MonitorTrackSTACosmicMuonsBarrel,
-	MonitorTrackSTACosmicMuonsEndcaps}
+module  MonitorTrackSTACosmicMuons1LegBarrel = MonitorTrackSTAMuons from "DQM/TrackingMonitor/data/MonitorTrackSTAMuons.cfi"
+replace MonitorTrackSTACosmicMuons1LegBarrel.FolderName="Muons/cosmicMuons1LegBarrelOnly"
+
+module  MonitorTrackLHCStandAloneMuonsBarrelOnly = MonitorTrackSTAMuons from "DQM/TrackingMonitor/data/MonitorTrackSTAMuons.cfi"
+replace MonitorTrackLHCStandAloneMuonsBarrelOnly.FolderName="Muons/standAloneMuonsBarrelOnly"
+
+module  MonitorTrackLHCStandAloneMuonsEndCapsOnly= MonitorTrackSTAMuons from "DQM/TrackingMonitor/data/MonitorTrackSTAMuons.cfi"
+replace MonitorTrackLHCStandAloneMuonsEndCapsOnly.FolderName="Muons/standAloneMuonsEndCapsOnly"
+
+module  MonitorTrackSTACosmicMuonsNoDriftBarrel = MonitorTrackSTAMuons from "DQM/TrackingMonitor/data/MonitorTrackSTAMuons.cfi"
+replace MonitorTrackSTACosmicMuonsNoDriftBarrel.FolderName="Muons/cosmicMuonsNoDriftBarrelOnly"
+
+
+
+sequence standAloneCosmicMuonsMonitors = {
+    MonitorTrackSTACosmicMuons,
+    MonitorTrackSTACosmicMuonsBarrel,
+    MonitorTrackSTACosmicMuons1LegBarrel,
+    MonitorTrackSTACosmicMuonsEndCaps,
+    MonitorTrackLHCStandAloneMuonsBarrelOnly,
+    MonitorTrackLHCStandAloneMuonsEndCapsOnly,
+    MonitorTrackSTACosmicMuonsNoDriftBarrel
+}
