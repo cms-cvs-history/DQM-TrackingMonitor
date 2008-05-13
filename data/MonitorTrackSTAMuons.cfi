@@ -3,6 +3,7 @@
   {
     string TrackProducer="standAloneMuons"
     string AlgoName="sta"
+    string TrackLabel=""
     string MeasurementState="default" // All/OuterSurface/InnerSurface/ImpactPoint/default(track)
 
     //
@@ -46,31 +47,31 @@
     double TrackPzMin = -50.0
     double TrackPzMax = 50.0
 
-    int32 ptErrBin = 500
+    int32 ptErrBin = 100
     double ptErrMin = 0
     double ptErrMax = 1000
   
-    int32 pxErrBin = 1000
+    int32 pxErrBin = 100
     double pxErrMin = -10
     double pxErrMax = 10
   
-    int32 pyErrBin = 1000
+    int32 pyErrBin = 100
     double pyErrMin = -10
     double pyErrMax = 10
   
-    int32 pzErrBin = 1000
+    int32 pzErrBin = 100
     double pzErrMin = -10
     double pzErrMax = 10
   
-    int32 pErrBin = 1000
+    int32 pErrBin = 100
     double pErrMin = -10
     double pErrMax = 10
   
-    int32 phiErrBin = 500
+    int32 phiErrBin = 100
     double phiErrMin = -5
     double phiErrMax = 5
   
-    int32 etaErrBin = 500
+    int32 etaErrBin = 100
     double etaErrMin = -0.5
     double etaErrMax = 0.5
     //
