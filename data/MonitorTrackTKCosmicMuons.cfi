@@ -1,5 +1,5 @@
 module MonitorTrackTKCosmicMuons = TrackingMonitor {
-  InputTag TrackProducer="ctfWithMaterialTracksP5"
+  string TrackProducer="ctfWithMaterialTracksP5"
   string AlgoName="ctf"
   string MeasurementState="default" // All/OuterSurface/InnerSurface/ImpactPoint/default(track)
 

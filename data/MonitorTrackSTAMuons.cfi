@@ -1,7 +1,7 @@
   # MonitorTrackGlobal
   module  MonitorTrackSTAMuons = TrackingMonitor
   {
-    InputTag TrackProducer="standAloneMuons"
+    string TrackProducer="standAloneMuons"
     string AlgoName="sta"
     string MeasurementState="default" // All/OuterSurface/InnerSurface/ImpactPoint/default(track)
 
