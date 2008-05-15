@@ -1,9 +1,7 @@
   # MonitorTrackGlobal
-  module  MonitorTrackSTAMuons = TrackingMonitor
-  {
-    string TrackProducer="standAloneMuons"
+module  MonitorTrackSTAMuons = TrackingMonitor {
+    InputTag TrackProducer=standAloneMuons:UpdatedAtVtx
     string AlgoName="sta"
-    string TrackLabel=""
     string MeasurementState="default" // All/OuterSurface/InnerSurface/ImpactPoint/default(track)
 
     //

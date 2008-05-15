@@ -1,8 +1,8 @@
 module MonitorTrackSTACosmicMuonsHLTDT = MonitorTrackSTAMuons from "DQM/TrackingMonitor/data/MonitorTrackSTAMuons.cfi"
-replace MonitorTrackSTACosmicMuonsHLTDT.TrackProducer = "dtCosmicSTA"
+replace MonitorTrackSTACosmicMuonsHLTDT.TrackProducer = dtCosmicSTA
 replace MonitorTrackSTACosmicMuonsHLTDT.FolderName = "Muons/STATrackDT"
 #replace MonitorTrackSTACosmicMuonsHLTDT.OutputMEsInRootFile = true
 
 module MonitorTrackSTACosmicMuonsHLTCSC = MonitorTrackSTAMuons from "DQM/TrackingMonitor/data/MonitorTrackSTAMuons.cfi"
-replace MonitorTrackSTACosmicMuonsHLTCSC.TrackProducer = "cscCosmicSTA"
+replace MonitorTrackSTACosmicMuonsHLTCSC.TrackProducer = cscCosmicSTA
 replace MonitorTrackSTACosmicMuonsHLTCSC.FolderName = "Muons/STATrackCSC"
