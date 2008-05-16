@@ -1,31 +1,40 @@
 include "DQM/TrackingMonitor/data/MonitorTrackSTACosmicMuons.cfi"
 
+
 module  MonitorTrackSTACosmicMuonsBarrel = MonitorTrackSTAMuons from "DQM/TrackingMonitor/data/MonitorTrackSTAMuons.cfi"
 replace MonitorTrackSTACosmicMuonsBarrel.FolderName="Muons/cosmicMuonsBarrelOnly"
 replace MonitorTrackSTACosmicMuonsBarrel.TrackProducer="cosmicMuonsBarrelOnly"
+replace MonitorTrackSTACosmicMuonsBarrel.TrackLabel=""
+
 
 module  MonitorTrackSTACosmicMuonsEndCaps = MonitorTrackSTAMuons from "DQM/TrackingMonitor/data/MonitorTrackSTAMuons.cfi"
 replace MonitorTrackSTACosmicMuonsEndCaps.FolderName="Muons/cosmicMuonsEndCapsOnly"
 replace MonitorTrackSTACosmicMuonsEndCaps.TrackProducer="cosmicMuonsEndCapsOnly"
+replace MonitorTrackSTACosmicMuonsEndCaps.TrackLabel=""
 
 
 module  MonitorTrackSTACosmicMuons1LegBarrel = MonitorTrackSTAMuons from "DQM/TrackingMonitor/data/MonitorTrackSTAMuons.cfi"
 replace MonitorTrackSTACosmicMuons1LegBarrel.FolderName="Muons/cosmicMuons1LegBarrelOnly"
 replace MonitorTrackSTACosmicMuons1LegBarrel.TrackProducer="cosmicMuons1LegBarrelOnly"
+replace MonitorTrackSTACosmicMuons1LegBarrel.TrackLabel=""
 
 
 module  MonitorTrackLHCStandAloneMuonsBarrelOnly = MonitorTrackSTAMuons from "DQM/TrackingMonitor/data/MonitorTrackSTAMuons.cfi"
 replace MonitorTrackLHCStandAloneMuonsBarrelOnly.FolderName="Muons/standAloneMuonsBarrelOnly"
 replace MonitorTrackLHCStandAloneMuonsBarrelOnly.TrackProducer="lhcStandAloneMuonsBarrelOnly"
+replace MonitorTrackLHCStandAloneMuonsBarrelOnly.TrackLabel=""
+
 
 module  MonitorTrackLHCStandAloneMuonsEndCapsOnly= MonitorTrackSTAMuons from "DQM/TrackingMonitor/data/MonitorTrackSTAMuons.cfi"
 replace MonitorTrackLHCStandAloneMuonsEndCapsOnly.FolderName="Muons/standAloneMuonsEndCapsOnly"
 replace MonitorTrackLHCStandAloneMuonsEndCapsOnly.TrackProducer="lhcStandAloneMuonsEndCapsOnly"
+replace MonitorTrackLHCStandAloneMuonsEndCapsOnly.TrackLabel=""
+
 
 module  MonitorTrackSTACosmicMuonsNoDriftBarrel = MonitorTrackSTAMuons from "DQM/TrackingMonitor/data/MonitorTrackSTAMuons.cfi"
 replace MonitorTrackSTACosmicMuonsNoDriftBarrel.FolderName="Muons/cosmicMuonsNoDriftBarrelOnly"
 replace MonitorTrackSTACosmicMuonsNoDriftBarrel.TrackProducer="cosmicMuonsNoDriftBarrelOnly"
-
+replace MonitorTrackSTACosmicMuonsNoDriftBarrel.TrackLabel=""
 
 
 sequence standAloneCosmicMuonsMonitors = {

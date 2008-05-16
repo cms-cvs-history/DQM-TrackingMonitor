@@ -3,7 +3,7 @@
   {
     string TrackProducer="standAloneMuons"
     string AlgoName="sta"
-    string TrackLabel=""
+    string TrackLabel="UpdatedAtVtx"
     string MeasurementState="default" // All/OuterSurface/InnerSurface/ImpactPoint/default(track)
 
     //
