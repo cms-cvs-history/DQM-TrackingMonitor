@@ -1,4 +1,4 @@
-module MonitorTrackGLBCosmicMuons = TrackingMonitor from "DQM/TrackingMonitor/data/MonitorTrackGLBMuons.cfi"
+module MonitorTrackGLBCosmicMuons = MonitorTrackGLBMuons from "DQM/TrackingMonitor/data/MonitorTrackGLBMuons.cfi"
 
 replace MonitorTrackGLBCosmicMuons.TrackProducer="globalCosmicMuons"
 replace MonitorTrackGLBCosmicMuons.FolderName = "Muons/globalCosmicMuons"
