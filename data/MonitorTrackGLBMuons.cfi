@@ -1,4 +1,4 @@
-module MonitorTrackGLBMuons = TrackingMonitor from "DQM/TrackingMonitor/data/TrackingMonitor.cfi"
+module MonitorTrackGLBMuons = TrackMon from "DQM/TrackingMonitor/data/TrackingMonitor.cfi"
 
 replace MonitorTrackGLBMuons.TrackProducer="globalMuons"
 replace MonitorTrackGLBMuons.AlgoName="glb"
