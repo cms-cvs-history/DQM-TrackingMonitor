@@ -75,7 +75,7 @@
     double etaErrMin = -0.5
     double etaErrMax = 0.5
     //
-    string FolderName = "Muons/STATrack"
+    string FolderName = "Muons/standAloneMuons"
     bool OutputMEsInRootFile = false
     string OutputFileName="monitortrackparameters_stamuons.root"
   }
