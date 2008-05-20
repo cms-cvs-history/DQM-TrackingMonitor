@@ -1,4 +1,4 @@
-module MonitorTrackTKCosmicMuons = TrackingMonitor from "DQM/TrackingMonitor/data/TrackingMonitor.cfi"
+module MonitorTrackTKCosmicMuons = TrackMon from "DQM/TrackingMonitor/data/TrackingMonitor.cfi"
 
 replace MonitorTrackTKCosmicMuons.TrackProducer = ctfWithMaterialTracksP5
 replace MonitorTrackTKCosmicMuons.AlgoName = "ctf"
