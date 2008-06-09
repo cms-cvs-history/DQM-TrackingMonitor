@@ -9,9 +9,9 @@ module  MonitorTrackSTAMuons = TrackingMonitor {
     double TkSizeMin = -0.5
     double TkSizeMax = 10.5
 
-    int32 RecHitBin=90
+    int32 RecHitBin=120
     double RecHitMin = 0
-    double RecHitMax = 90
+    double RecHitMax = 120
 
     int32 PhiBin = 100
     double PhiMin = -3.2
@@ -25,8 +25,8 @@ module  MonitorTrackSTAMuons = TrackingMonitor {
     double ThetaMin = 0.0
     double ThetaMax = 3.2
 
-    int32 Chi2Bin = 100
-    double Chi2Min = -0.5
+    int32 Chi2Bin = 250
+    double Chi2Min = 0
     double Chi2Max = 500
 
     int32 TrackPtBin = 20
