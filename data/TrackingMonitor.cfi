@@ -5,7 +5,7 @@ module TrackMon = TrackingMonitor {
 
   //
   int32 TkSizeBin=500
-  double TkSizeMin = 0.0
+  double TkSizeMin = -0.5
   double TkSizeMax = 500.0
 
   int32 RecHitBin=50
