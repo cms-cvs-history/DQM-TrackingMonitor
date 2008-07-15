@@ -8,9 +8,9 @@ module TrackMon = TrackingMonitor {
   double TkSizeMin = 0.0
   double TkSizeMax = 500.0
 
-  int32 RecHitBin=22
+  int32 RecHitBin=50
   double RecHitMin = 0
-  double RecHitMax = 25
+  double RecHitMax = 150
 
   int32 PhiBin = 100
   double PhiMin = -3.2
