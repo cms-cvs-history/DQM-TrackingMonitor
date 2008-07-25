@@ -72,6 +72,23 @@ module  MonitorTrackSTAMuons = TrackingMonitor {
     int32 etaErrBin = 100
     double etaErrMin = -0.5
     double etaErrMax = 0.5
+
+    int32 D0Bin = 100
+    double D0Min = -0.5
+    double D0Max = 0.5
+
+    int32 VXBin = 20
+    double VXMin = -20
+    double VXMax = 20
+
+    int32 VYBin = 20
+    double VYMin = -20
+    double VYMax = 20
+
+    int32 VZBin = 50
+    double VZMin = -100
+    double VZMax = 100
+
     //
     string FolderName = "Muons/standAloneMuonsUpdatedAtVtx"
     bool OutputMEsInRootFile = false
