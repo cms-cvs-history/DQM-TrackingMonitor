@@ -1,4 +1,0 @@
-module  MonitorTrackSTACosmicMuons = MonitorTrackSTAMuons from "DQM/TrackingMonitor/data/MonitorTrackSTAMuons.cfi" 
-replace MonitorTrackSTACosmicMuons.FolderName="Muons/cosmicMuons"
-replace MonitorTrackSTACosmicMuons.TrackProducer=cosmicMuons
-
