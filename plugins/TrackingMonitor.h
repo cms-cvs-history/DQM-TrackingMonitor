@@ -10,7 +10,7 @@ Monitoring source for general quantities related to tracks.
 */
 // Original Author:  Suchandra Dutta, Giorgia Mila
 //         Created:  Thu 28 22:45:30 CEST 2008
-// $Id: TrackingMonitor.h,v 1.13 2011/07/07 13:13:37 fiori Exp $
+// $Id: TrackingMonitor.h,v 1.11 2011/02/17 14:29:53 verdier Exp $
 
 #include <memory>
 #include <fstream>
@@ -36,9 +36,6 @@ class TrackingMonitor : public edm::EDAnalyzer
         ~TrackingMonitor();
         virtual void beginJob(void);
         virtual void endJob(void);
-
-	virtual void setMaxMinBin(std::vector<double> & ,std::vector<double> &  ,std::vector<int> &  ,double, double, int, double, double, int);
-	virtual void setNclus(const edm::Event&, std::vector<int> & );
 
         virtual void beginLuminosityBlock(const edm::LuminosityBlock& lumi, const edm::EventSetup&  eSetup);
         virtual void analyze(const edm::Event&, const edm::EventSetup&);
@@ -74,9 +71,6 @@ class TrackingMonitor : public edm::EDAnalyzer
 
         // Track Seeds 
         MonitorElement * NumberOfSeeds;
-	std::vector<MonitorElement *> SeedsVsClusters;
-	std::vector<std::string> ClusterLabels;
-	
 
         // Track Candidates
         MonitorElement * NumberOfTrackCandidates;
@@ -97,15 +91,6 @@ class TrackingMonitor : public edm::EDAnalyzer
         bool doTrackerSpecific_; 
         bool doLumiAnalysis;
 	bool doProfilesVsLS_;
-	bool doAllSeedPlots;
-	bool doAllPlots;
-	bool doDCAPlots_;
-	bool doGeneralPropertiesPlots_;
-	bool doHitPropertiesPlots_;
-	bool doTkCandPlots;
-	bool doSeedNumberPlot;
-	bool doSeedVsClusterPlot;
-	bool runTrackBuildingAnalyzerForSeed;
 
         GenericTriggerEventFlag* genTriggerEventFlag_;
 };
