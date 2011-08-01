@@ -4,8 +4,8 @@ TrackMon = cms.EDAnalyzer("TrackingMonitor",
     
     # input tags
     TrackProducer = cms.InputTag("generalTracks"),
-    SeedProducer  = cms.InputTag("newSeedFromTriplets"),
-    TCProducer    = cms.InputTag("newTrackCandidateMaker"),
+    SeedProducer  = cms.InputTag("initialStepSeeds"),
+    TCProducer    = cms.InputTag("initialStepTrackCandidates"),
     beamSpot      = cms.InputTag("offlineBeamSpot"),
     
     # output parameters
